@@ -3,7 +3,7 @@
 Deliverables for Week 2 of the Fitness API Security Assessment & Hardening Framework internship.
 
 > **Note on the target:** The Week 2 brief did **not** provide a target API (no URL, application,
-> or dataset — only the task description and general reference links). To perform genuine
+> or dataset only the task description and general reference links). To perform genuine
 > reconnaissance, a minimal **local practice Flask API** was built and run on `127.0.0.1:5000`,
 > and all recon was carried out against that authorized, locally-owned instance. The methodology,
 > scripts, and findings transfer directly to the real target API if/when one is supplied.
@@ -25,5 +25,5 @@ cd scripts && python3 recon.py
 ```
 
 ## Scope / ethics
-All activity targets a locally-run API you own. Only recon + mapping was done this week —
+All activity targets a locally-run API you own. Only recon + mapping was done this week 
 no exploitation. Do not point these scripts at systems you are not authorized to test.
