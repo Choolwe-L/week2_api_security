@@ -1,0 +1,56 @@
+[
+  {
+    "method": "GET",
+    "path": "/api/health",
+    "status": 200,
+    "sample": "{\"service\":\"fitness-api\",\"status\":\"ok\",\"version\":\"v1\"}\n"
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/1/profile",
+    "status": 200,
+    "sample": "{\"id\":1,\"name\":\"Alice\",\"plan\":\"pro\"}\n"
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/2/profile",
+    "status": 200,
+    "sample": "{\"id\":2,\"name\":\"Bob\",\"plan\":\"free\"}\n"
+  },
+  {
+    "method": "GET",
+    "path": "/api/users/1/workouts",
+    "status": 200,
+    "sample": "[{\"id\":10,\"minutes\":30,\"type\":\"run\"}]\n"
+  },
+  {
+    "method": "POST",
+    "path": "/api/users/1/workouts",
+    "status": 201,
+    "sample": "{\"echo\":{},\"message\":\"created\"}\n"
+  },
+  {
+    "method": "POST",
+    "path": "/api/login",
+    "status": 200,
+    "sample": "{\"message\":\"login endpoint\",\"received_user\":null}\n"
+  },
+  {
+    "method": "GET",
+    "path": "/api/admin/stats",
+    "status": 200,
+    "sample": "{\"total_users\":2,\"total_workouts\":2}\n"
+  },
+  {
+    "method": "GET",
+    "path": "/swagger",
+    "status": 404,
+    "sample": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the"
+  },
+  {
+    "method": "GET",
+    "path": "/openapi.json",
+    "status": 404,
+    "sample": "<!doctype html>\n<html lang=en>\n<title>404 Not Found</title>\n<h1>Not Found</h1>\n<p>The requested URL was not found on the"
+  }
+]
